@@ -1,0 +1,95 @@
+ab -n 1000 -c 10 http://127.0.0.1:3000/
+
+########## first run ##########
+Concurrency Level:      10
+Time taken for tests:   2.687 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      681000 bytes
+HTML transferred:       491000 bytes
+Requests per second:    372.10 [#/sec] (mean)
+Time per request:       26.875 [ms] (mean)
+Time per request:       2.687 [ms] (mean, across all concurrent requests)
+Transfer rate:          247.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   3.3      0     106
+Processing:    13   26   8.8     24      64
+Waiting:       13   26   8.7     24      64
+Total:         13   27   9.3     24     125
+
+Percentage of the requests served within a certain time (ms)
+  50%     24
+  66%     28
+  75%     31
+  80%     33
+  90%     38
+  95%     45
+  98%     51
+  99%     59
+ 100%    125 (longest request)
+
+ ########## second run ##########
+
+
+ Concurrency Level:      10
+ Time taken for tests:   2.219 seconds
+ Complete requests:      1000
+ Failed requests:        0
+ Total transferred:      681000 bytes
+ HTML transferred:       491000 bytes
+ Requests per second:    450.68 [#/sec] (mean)
+ Time per request:       22.189 [ms] (mean)
+ Time per request:       2.219 [ms] (mean, across all concurrent requests)
+ Transfer rate:          299.72 [Kbytes/sec] received
+
+ Connection Times (ms)
+               min  mean[+/-sd] median   max
+ Connect:        0    0   0.0      0       0
+ Processing:    12   22   4.4     21      42
+ Waiting:       12   22   4.4     21      42
+ Total:         12   22   4.4     21      42
+
+ Percentage of the requests served within a certain time (ms)
+   50%     21
+   66%     23
+   75%     24
+   80%     25
+   90%     28
+   95%     31
+   98%     34
+   99%     37
+  100%     42 (longest request)
+
+
+ ########## third run ##########
+
+ Concurrency Level:      10
+ Time taken for tests:   2.253 seconds
+ Complete requests:      1000
+ Failed requests:        0
+ Total transferred:      681000 bytes
+ HTML transferred:       491000 bytes
+ Requests per second:    443.94 [#/sec] (mean)
+ Time per request:       22.526 [ms] (mean)
+ Time per request:       2.253 [ms] (mean, across all concurrent requests)
+ Transfer rate:          295.24 [Kbytes/sec] received
+
+ Connection Times (ms)
+               min  mean[+/-sd] median   max
+ Connect:        0    0   0.0      0       0
+ Processing:    12   22   4.8     21      43
+ Waiting:       12   22   4.8     21      43
+ Total:         12   22   4.8     21      43
+
+ Percentage of the requests served within a certain time (ms)
+   50%     21
+   66%     23
+   75%     25
+   80%     26
+   90%     29
+   95%     32
+   98%     36
+   99%     39
+  100%     43 (longest request)
