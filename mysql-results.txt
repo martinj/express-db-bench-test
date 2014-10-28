@@ -1,0 +1,36 @@
+ab -n 1000 -c 10 http://127.0.0.1:3000/
+########## first run ###############
+Concurrency Level:      10
+Time taken for tests:   2.695 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      428000 bytes
+HTML transferred:       239000 bytes
+Requests per second:    371.01 [#/sec] (mean)
+Time per request:       26.953 [ms] (mean)
+Time per request:       2.695 [ms] (mean, across all concurrent requests)
+Transfer rate:          155.07 [Kbytes/sec] received
+
+########## second run ###############
+Concurrency Level:      10
+Time taken for tests:   2.465 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      428000 bytes
+HTML transferred:       239000 bytes
+Requests per second:    405.65 [#/sec] (mean)
+Time per request:       24.652 [ms] (mean)
+Time per request:       2.465 [ms] (mean, across all concurrent requests)
+Transfer rate:          169.55 [Kbytes/sec] received
+
+########## third run ###############
+Concurrency Level:      10
+Time taken for tests:   2.513 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      428000 bytes
+HTML transferred:       239000 bytes
+Requests per second:    397.98 [#/sec] (mean)
+Time per request:       25.127 [ms] (mean)
+Time per request:       2.513 [ms] (mean, across all concurrent requests)
+Transfer rate:          166.34 [Kbytes/sec] received
