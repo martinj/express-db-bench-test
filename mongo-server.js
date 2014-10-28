@@ -12,7 +12,7 @@ function getUser(token) {
 function insertAndGet() {
 	var p = [];
 	['foo', 'bar', 'la', 'bamba'].forEach(function (val) {
-		p.push(db.get('data').insertAsync({ value: val }));
+		p.push(db.get('data').insertAsync({ value: val }, { j: true }));
 	});
 
 	return Promise.all(p).then(function () {
