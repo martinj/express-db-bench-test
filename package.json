@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^2.3.6",
+    "cradle": "^0.6.7",
     "express": "^4.10.0",
     "hat": "0.0.3",
     "monk": "^0.9.0",
